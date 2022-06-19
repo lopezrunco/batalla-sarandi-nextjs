@@ -1,8 +1,10 @@
 import Head from 'next/head'
+import { data } from '../data'
 import Intro from '../components/Intro'
+import News from '../components/News'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({ news }) {
   return (
     <div>
       <Head>
@@ -11,6 +13,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Intro />
+      <News news={news} />
     </div>
   )
+}
+
+// This method allows to render data before rendering component or pages
+export const getStaticProps = async () => {
+  const news = data
+  return {
+    props: {news}
+  }
 }
