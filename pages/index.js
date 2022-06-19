@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Intro from '../components/Intro'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Reconocido establecimiento lechero como modelo de producción por autoridades gubernamentales y gremiales de todo el país." />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <h1 className='styles.title'>Home page</h1>
+      <Intro />
     </div>
   )
 }
