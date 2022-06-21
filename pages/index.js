@@ -3,7 +3,6 @@ import { data } from '../data'
 import Intro from '../components/Intro'
 import News from '../components/News'
 import Testimonials from '../components/Testimonials'
-import styles from '../styles/Home.module.css'
 
 export default function Home({ news }) {
   return (
@@ -13,7 +12,7 @@ export default function Home({ news }) {
         <meta name="description" content="Reconocido establecimiento lechero como modelo de producción por autoridades gubernamentales y gremiales de todo el país." />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Intro />
+      {/* <Intro /> */}
       <News news={news} />
       <Testimonials />
     </div>
@@ -24,6 +23,6 @@ export default function Home({ news }) {
 export const getStaticProps = async () => {
   const news = data
   return {
-    props: {news}
+    props: { news }
   }
 }
