@@ -40,9 +40,9 @@ export const getStaticPaths = async () => {
     }
 }
 
-export const getStaticProps = async (ctx) => {
+export const getStaticProps = async (ctx) => { // The parameter "ctx" (context) is a reference to the object "params:{name:item.name}" of the getStaticPaths function.
     const name = ctx.params.name
-    const newItem = data.filter(item => item.name === name)[0]
+    const newItem = data.filter(item => item.name === name)[0] // In accordance to the parameter name we fetch the data
     return {
         props: { newItem }
     }
