@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { data } from '../data'
 import Intro from '../components/Intro'
 import News from '../components/News'
+import Testimonials from '../components/Testimonials'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ news }) {
@@ -14,6 +15,7 @@ export default function Home({ news }) {
       </Head>
       <Intro />
       <News news={news} />
+      <Testimonials />
     </div>
   )
 }

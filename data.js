@@ -141,3 +141,38 @@ export const data = [
         ],
     },
 ];
+
+export const testimonials = [
+    {
+        id: 1,
+        avatar: "test-4.jpg",
+        comment:
+            "Estamos en los inicios de un proceso de intensificación: Hace dos años, sólo algunos hablaban de riego, pero yo estoy seguro que dentro de algunos años más, habrán muchos productores como Cono López.",
+        name: "Ing. Agr. Tabaré Aguerre",
+        title: "Ex Ministro de Ganadería, Agricultura y Pesca",
+    },
+    {
+        id: 2,
+        avatar: "test-1.jpg",
+        comment:
+            "Una empresa con muy buenos indicadores físicos y económicos, coherente en el objetivo de producir, posibilitando a una familia vivir dignamente y contribuyendo a la generación de mano de obra en la región.",
+        name: "Dr. Diego Ibarra",
+        title: "Zonal Florida de Conaprole",
+    },
+    {
+        id: 3,
+        avatar: "test-3.jpg",
+        comment:
+            "Un predio muy lindo, muy estructurado y con buenos márgenes de producción, que eso es lo que tenemos que buscar todos los productores.",
+        name: "Fabián Hernández",
+        title: "Presidente Sociedad de Productores de Leche de Florida",
+    },
+    {
+        id: 4,
+        avatar: "test-2.jpg",
+        comment:
+            "Muy buenos resultados desde el punto de vista productivo y económico. Exelentes perspectivas en el manejo y funcionamiento familiar, además de una apuesta muy clara a la carga y a la producción.",
+        name: "Ing. Agr. Andrés Barreira",
+        title: "Gerente Sociedad Productores de Leche de Florida",
+    }
+];
