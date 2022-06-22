@@ -1,7 +1,8 @@
 import { useState } from "react";
-import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Navbar.module.css";
+import MenuLinks from "../components/MenuLinks";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -22,30 +23,20 @@ const Navbar = () => {
         <i className="fa fa-bars"></i>
       </div>
       <nav
-        id="menu"
-        className={styles.menu}
+        className={styles.menuMobile}
         style={{ top: open ? "0px" : "-100vh" }}
       >
-        <ul>
-          <li>
-            <Link href="/">Inicio</Link>
-          </li>
-          <li>
-            <Link href="/nosotros">Nosotros</Link>
-          </li>
-          <li>
-            <Link href="/galeria">Galería</Link>
-          </li>
-          <li>
-            <Link href="/novedades">Novedades</Link>
-          </li>
-          <li>
-            <Link href="/contacto">Contacto</Link>
-          </li>
+        <ul onClick={() => setOpen(!open)}>
+          <MenuLinks />
         </ul>
         <div className={styles.closeIcon} onClick={() => setOpen(!open)}>
           <i className="fas fa-times"></i>
         </div>
+      </nav>
+      <nav className={styles.menuDesktop}>
+        <ul>
+          <MenuLinks />
+        </ul>
       </nav>
     </header>
   );

@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-.menu {
+.menuMobile {
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -37,7 +37,7 @@
     transition: var(--main-transition);
 }
 
-.menu ul {
+.menuMobile ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -47,25 +47,69 @@
     width: 100%;
 }
 
-.menu ul li {
+.menuMobile ul li {
     font-size: 1.5rem;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
 
-.menu ul li:last-child {
+.menuMobile ul li:last-child {
     border-bottom: none;
 }
 
-.menu ul li a {
+.menuMobile ul li a {
     width: 100%;
     display: inline-block;
     padding: 1rem;
 }
 
-.menu .closeIcon {
+.menuMobile .closeIcon {
     font-size: 2rem;
     cursor: pointer;
     color: var(--primary-color);
+}
+
+.menuDesktop {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        gap: 1rem;
+    }
+
+    .menuToggle {
+        display: none;
+    }
+
+    .menuDesktop {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: url(../public/images/header-bg.jpg) top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .menuDesktop ul {
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+    }
+
+    .menuDesktop ul li a {
+        display: inline-block;
+        color: var(--color-text);
+        font-size: 1.2rem;
+        text-decoration: none;
+        line-height: 60px;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 0.7rem 0 0.4rem;
+    }
+
+    .menuMobile {
+        display: none;
+    }
 }
