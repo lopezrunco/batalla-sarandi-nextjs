@@ -29,6 +29,7 @@
 @media (min-width: 760px) {
     .testimonial {
         max-height: 50rem;
+        margin-bottom: 30rem;
     }
 
     .testimonial .grid {

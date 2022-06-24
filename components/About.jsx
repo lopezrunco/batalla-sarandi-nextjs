@@ -15,7 +15,7 @@ const About = () => {
           </div>
 
           <div className={styles.textCol}>
-            <span className="topTitle">Acerca del establecimiento</span>
+            <span className="top-title">Acerca del establecimiento</span>
             <h2>Somos un tambo modelo</h2>
             <div className="separator"></div>
             <p>

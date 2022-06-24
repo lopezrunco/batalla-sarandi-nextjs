@@ -172,7 +172,7 @@ export const testimonials = [
         comment:
             "Muy buenos resultados desde el punto de vista productivo y económico. Exelentes perspectivas en el manejo y funcionamiento familiar, además de una apuesta muy clara a la carga y a la producción.",
         name: "Ing. Agr. Andrés Barreira",
-        title: "Gerente Sociedad Productores de Leche de Florida",
+        title: "Gerente Sociedad Productores Leche Florida",
     }
 ];
 
