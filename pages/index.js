@@ -2,8 +2,8 @@ import Head from 'next/head'
 import { data } from '../data'
 import HomeSlider from '../components/HomeSlider'
 import News from '../components/News'
-import Testimonials from '../components/Testimonials'
 import About from '../components/About'
+import TestimonialsSection from '../components/TestimonialsSection'
 
 export default function Home({ news }) {
   return (
@@ -15,8 +15,8 @@ export default function Home({ news }) {
       </Head>
       <HomeSlider />
       <About />
+      <TestimonialsSection />
       <News news={news} />
-      <Testimonials />
     </div>
   )
 }
