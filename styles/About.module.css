@@ -1,0 +1,125 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.grid .imagesCol .backCircle {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    margin-top: 4rem;
+    margin-left: -20rem;
+    background-color: var(--medium-light-bg);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.grid .imagesCol .lgImg,
+.grid .imagesCol .smImg {
+    overflow: hidden;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.grid .imagesCol .lgImg {
+    width: 80%;
+    height: 26rem;
+    background-image: url(../public/images/about-1.jpg);
+}
+
+.grid .imagesCol .smImg {
+    width: 60%;
+    height: 16rem;
+    background-image: url(../public/images/about-2.jpg);
+    margin-left: auto;
+    transform: translateY(-30%);
+}
+
+.grid .imagesCol .lgImg img,
+.grid .imagesCol .smImg img {
+    width: 100%;
+    height: auto;
+}
+
+.grid .imagesCol .topCircle {
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    margin-top: -63rem;
+    margin-left: -7rem;
+    display: none;
+}
+
+.grid .featuredInfo {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.grid .featuredInfo .box {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+/* Media queries */
+
+@media (min-width: 760px) {
+    .grid .imagesCol .lgImg {
+        height: 33rem;
+    }
+
+    .grid .imagesCol .smImg {
+        height: 25rem;
+    }
+}
+
+@media (min-width: 1170px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid .imagesCol .lgImg,
+    .grid .imagesCol .smImg {
+        box-shadow: var(--box-shadow);
+    }
+
+    .grid .imagesCol .lgImg {
+        height: 47rem;
+    }
+
+    .grid .imagesCol .smImg {
+        transform: translateY(-80%);
+    }
+
+    .grid .imagesCol {
+        max-height: 52rem;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid {
+        gap: 6rem;
+    }
+
+    .grid .imagesCol .topCircle {
+        display: flex;
+        margin-top: -56rem;
+    }
+}
