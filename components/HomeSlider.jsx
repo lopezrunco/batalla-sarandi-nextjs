@@ -34,9 +34,7 @@ const Intro = () => {
                       <button onClick={prevSlide}><i className="fas fa-chevron-left"></i></button>
                       <button onClick={nextSlide}><i className="fas fa-chevron-right"></i></button>
                     </div>
-                  </div>
-                </div>
-                <div className={styles.position}>
+                    <div className={styles.position}>
                   {sliderData.map((el, index) => {
                     if (index + 1 === actualSlide) {
                       return <div className={styles.positionDotActive} key={el.id}></div>
@@ -45,6 +43,9 @@ const Intro = () => {
                       }
                   })}
                 </div>
+                  </div>
+                </div>
+                
               </div>
             </>
           );

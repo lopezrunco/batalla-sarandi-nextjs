@@ -6,9 +6,11 @@
 
 .sliderContainer {
     height: 78vh;
+    min-height: 600px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .caption {
@@ -16,6 +18,7 @@
     width: 100%;
     padding: 2rem;
     height: 78vh;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,10 +37,6 @@
 }
 
 .caption p::after {
-    content: url(../public/images/slider-lines.png);
-    display: inline-block;
-    margin-top: 5px;
-    width: 100%;
     display: none;
 }
 
@@ -76,21 +75,97 @@
 }
 
 .position {
-    /* display: flex; */
     display: none;
-    gap: 1rem;
 }
 
-.positionDot {
-    width: 1rem;
-    height: 1rem;
-    background-color: #000;
-    border-radius: 50%;
+@media (min-width: 1024px) {
+    .sliderContainer {
+        animation: slide 2s ease;
+    }
+
+    .caption {
+        align-items: flex-start;
+        text-align: left;
+        padding: 4rem;
+    }
+
+    .caption p {
+        font-size: 1.8rem;
+        opacity: 0;
+        animation: captionText 0.5s ease forwards;
+        animation-delay: 1.2s;
+    }
+
+    .caption p::after {
+        content: url(../public/images/slider-lines.png);
+        display: inline-block;
+        margin-top: 5px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .caption h2 {
+        font-size: 14.6rem;
+        max-width: 50%;
+        opacity: 0;
+        animation: captionText 0.5s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .controllers {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .controllers button {
+        font-size: 3rem;
+    }
+
+    .position {
+        position: absolute;
+        height: 100%;
+        right: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .position .positionDot,
+    .position .positionDotActive {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid #ffffff9c;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: var(--main-transition);
+    }
+
+    .position .positionDotActive {
+        background-color: #ffffff9c;
+    }
 }
 
-.positionDotActive {
-    width: 1rem;
-    height: 1rem;
-    background-color: red;
-    border-radius: 50%;
+/* Caption animation */
+@keyframes captionText {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Image animation */
+@keyframes slide {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
