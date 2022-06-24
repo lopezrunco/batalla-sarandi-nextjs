@@ -175,3 +175,26 @@ export const testimonials = [
         title: "Gerente Sociedad Productores de Leche de Florida",
     }
 ];
+
+export const sliderData = [
+    {
+        id: 1,
+        title: 'Tambo modelo',
+        subtitle: 'Reconocido por el M.g.a.p'
+    },
+    {
+        id: 2,
+        title: 'Cuarta generación',
+        subtitle: 'Mejorando a través de los años'
+    },
+    {
+        id: 3,
+        title: 'Sistema de riego',
+        subtitle: 'Adaptación pionera en la región'
+    },
+    {
+        id: 4,
+        title: 'Producción intesiva',
+        subtitle: '8.000 litros de lactancia anual'
+    }
+]

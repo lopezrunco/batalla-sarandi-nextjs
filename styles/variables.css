@@ -4,7 +4,9 @@
     --secondary-font: 'Amatic SC', cursive;
     /* Colors */
     --primary-color: #5b8c51;
+    --primary-color-darken: #4b7543;
     --secondary-color: #eddd5e;
+    --secondary-color-darken: #e8d330;
     --color-text: #878986;
     --dark-text: #404a3d;
     --light-text: #fff;
@@ -16,7 +18,7 @@
     --overlay-primary-color: #2a4324d3;
     --box-shadow: 5px 5px 10px #0000002e;
     /* Transitions */
-    --main-transition: ease-in-out .2s;
+    --main-transition: all ease-in-out .2s;
     /* Borders */
     --standard-border-radius: .5rem;
     --border-color: #ccc;
