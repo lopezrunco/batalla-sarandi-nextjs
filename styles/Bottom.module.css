@@ -1,0 +1,119 @@
+.bottom {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+}
+
+.grid h4,
+.grid a {
+    color: var(--light-text);
+}
+
+.grid a:hover {
+    color: var(--secondary-color);
+}
+
+.grid h4 {
+    margin-bottom: 2rem;
+}
+
+.grid h4::after {
+    content: "";
+    height: 0.4rem;
+    width: 3rem;
+    display: block;
+    border-radius: 1.5rem;
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
+
+
+.grid .bottomNavigation .footerMenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grid .bottomNews .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grid .bottomNews .flex .item {
+    overflow: hidden;
+}
+
+.grid .bottomNews .flex .item .grid {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid .bottomNews .flex .item .grid .thumb {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+}
+
+.grid .bottomNews .flex .item .grid .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.grid .bottomNews .flex .item .grid .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.grid .bottomNews .flex .item .grid .info p {
+    display: block;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.grid .bottomNews .flex .item .grid .info p i {
+    margin-right: 0.1rem;
+}
+
+.grid .bottomContact a {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.grid .bottomContact a:last-child {
+    display: none;
+}
+
+/* Media queries */
+
+@media (min-width: 760px) {
+    .bottom .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1170px) {
+    .bottom .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+}

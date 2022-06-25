@@ -1,8 +1,8 @@
 export const data = [
     {
         id: 1,
-        name: "design",
-        title: "Design",
+        name: "taller-introduccion-al-riego",
+        title: "Taller de introduccion al riego para productores",
         desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
         photo: "slider-1.jpg",
         longDesc:
@@ -36,8 +36,8 @@ export const data = [
     },
     {
         id: 2,
-        name: "development",
-        title: "Development",
+        name: "documental-sobre-lecheria-mgap",
+        title: "Participacion en documental sobre lecheria MGAP",
         desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
         photo: "slider-2.jpg",
         longDesc:
