@@ -1,6 +1,8 @@
 import PageHeader from "../components/PageHeader"
 import AboutIntro from "../components/AboutIntro"
 import AboutImages from "../components/AboutImages"
+import VideoModal from "../components/VideoModal"
+import AboutHistory from "../components/AboutHistory"
 
 const Nosotros = () => {
     return (
@@ -12,6 +14,13 @@ const Nosotros = () => {
             />
             <AboutIntro />
             <AboutImages />
+            <VideoModal
+                videoSrc='https://www.youtube.com/embed/qI-twSYUwxI'
+                bgImgName='video-section-bg2.jpg'
+                title='Parto de ganado vacuno lechero'
+                subtitle='Conozca nuestro establecimiento'
+            />
+            <AboutHistory />
         </>
     )
 }
