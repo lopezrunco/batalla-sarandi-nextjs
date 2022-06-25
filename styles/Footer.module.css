@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--light-text);
+    text-align: left;
+}
+
+.footer .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer .flex p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 760px) {
+    .footer .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

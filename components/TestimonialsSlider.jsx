@@ -23,7 +23,7 @@ const TestimonialsSlider = () => {
         {testimonials.map((el) => {
           if (el.id === actualSlide) {
             return (
-              <div className={styles.card}>
+              <div className={styles.card} key={el.id}>
                 <div className={styles.leftArrow} onClick={prevSlide}>
                   <i className="fas fa-chevron-left"></i>
                 </div>

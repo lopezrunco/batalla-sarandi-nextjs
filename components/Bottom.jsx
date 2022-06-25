@@ -39,9 +39,8 @@ const Bottom = () => {
             <div className={styles.flex}>
               {data.map((el, index) => {
                 if (index < 2) {
-                  console.log(el.title);
                   return (
-                    <div className={styles.item}>
+                    <div className={styles.item} key={index}>
                       <div className={styles.grid}>
                         <div className={styles.thumb}>
                           <a
