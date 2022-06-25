@@ -6,6 +6,7 @@ import About from '../components/About'
 import TestimonialsSection from '../components/TestimonialsSection'
 import VideoModal from '../components/VideoModal'
 import FeaturedInfo from '../components/FeaturedInfo'
+import CertificationsInfo from '../components/CertificationsInfo'
 
 export default function Home({ news }) {
   return (
@@ -26,6 +27,7 @@ export default function Home({ news }) {
       />
       <News news={news} />
       <FeaturedInfo />
+      <CertificationsInfo />
     </div>
   )
 }

@@ -1,0 +1,88 @@
+.certificate .certificateHeader {
+    background-color: var(--primary-color);
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.certificate .certificateHeader h2,
+.certificate .certificateHeader h4,
+.certificate .certificateHeader p {
+    color: var(--light-text);
+}
+
+.certificate .certificateHeader p {
+    margin-bottom: 0;
+}
+
+.certificate .certificateHeader .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.certificate .certificateHeader .grid .box2 img {
+    max-width: 20rem;
+}
+
+.certificate .certificateBody {
+    background-image: url("../public/images/sky-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 0;
+}
+
+.certificate .certificateFooter {
+    background-color: var(--light-bg);
+    padding: 6rem 0;
+}
+
+.certificate .certificateFooter .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.certificate .certificateFooter .wrapper .logoConaprole {
+    width: 70%;
+    max-width: 20rem;
+    margin-top: -12rem;
+}
+
+.certificate .certificateFooter .wrapper h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.certificate .certificateFooter .wrapper .checksGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Media queries */
+
+@media (min-width: 992px) {
+    .certificate .certificateHeader .grid {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .certificate .certificateHeader .grid .box2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1170px) {
+    .certificate .certificateBody .wrapper {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .certificate .certificateFooter .wrapper .checksGrid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 3rem;
+    }
+}

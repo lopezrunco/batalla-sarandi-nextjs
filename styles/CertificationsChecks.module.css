@@ -1,0 +1,22 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.item p {
+    margin-bottom: 0;
+    line-height: 2rem;
+}
+
+@media (min-width: 1170px) {
+    .item {
+        align-items: flex-start;
+    }
+
+    .item i {
+        font-size: 2.5rem;
+    }
+}
