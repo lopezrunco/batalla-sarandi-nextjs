@@ -4,6 +4,7 @@ import AboutImages from "../components/AboutImages"
 import VideoModal from "../components/VideoModal"
 import AboutHistory from "../components/AboutHistory"
 import AboutHits from "../components/AboutHits"
+import AboutToday from "../components/AboutToday"
 
 const Nosotros = () => {
     return (
@@ -23,6 +24,7 @@ const Nosotros = () => {
             />
             <AboutHistory />
             <AboutHits />
+            <AboutToday />
         </>
     )
 }
