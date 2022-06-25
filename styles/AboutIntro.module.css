@@ -1,0 +1,18 @@
+.aboutIntro .grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 760px) {
+    .aboutIntro .title {
+        text-align: left;
+    }
+
+    .aboutIntro .title .separator {
+        margin: 0;
+    }
+
+    .aboutIntro .grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
