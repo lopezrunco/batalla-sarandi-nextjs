@@ -5,6 +5,7 @@ import News from '../components/News'
 import About from '../components/About'
 import TestimonialsSection from '../components/TestimonialsSection'
 import VideoModal from '../components/VideoModal'
+import FeaturedInfo from '../components/FeaturedInfo'
 
 export default function Home({ news }) {
   return (
@@ -24,6 +25,7 @@ export default function Home({ news }) {
         subtitle='Conozca nuestro establecimiento'
       />
       <News news={news} />
+      <FeaturedInfo />
     </div>
   )
 }

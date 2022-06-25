@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const News = ({ news }) => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <span className={styles.subtitle}>
         Principales novedades del establecimiento
       </span>
@@ -38,7 +38,7 @@ const News = ({ news }) => {
           </Link>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

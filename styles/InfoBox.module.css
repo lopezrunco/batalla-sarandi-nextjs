@@ -1,0 +1,35 @@
+.box {
+    background-color: var(--primary-color);
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h4 {
+    margin-bottom: 0;
+    color: var(--light-text);
+}
+
+.box h4::before,
+.box h4::after {
+    content: url(../public/images/separator.png);
+    display: block;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+/* Media queries */
+@media (min-width: 760px) {
+    .box {
+        padding: 3rem;
+    }
+
+    .box h4::before,
+    .box h4::after {
+        display: inline-block;
+        margin: 0 1.5rem;
+    }
+}
