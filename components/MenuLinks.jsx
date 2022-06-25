@@ -4,19 +4,19 @@ const MenuLinks = () => {
   return (
     <>
       <li>
-        <Link href="/">Inicio</Link>
+        <Link href="/" passHref>Inicio</Link>
       </li>
       <li>
-        <Link href="/nosotros">Nosotros</Link>
+        <Link href="/nosotros" passHref>Nosotros</Link>
       </li>
       <li>
-        <Link href="/galeria">Galería</Link>
+        <Link href="/galeria" passHref>Galería</Link>
       </li>
       <li>
-        <Link href="/novedades">Novedades</Link>
+        <Link href="/novedades" passHref>Novedades</Link>
       </li>
       <li>
-        <Link href="/contacto">Contacto</Link>
+        <Link href="/contacto" passHref>Contacto</Link>
       </li>
     </>
   );

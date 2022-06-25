@@ -1,0 +1,49 @@
+.pageHeader {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    text-align: center;
+}
+
+.pageHeader h2,
+.pageHeader i,
+.pageHeader a {
+    color: var(--light-text);
+}
+
+.pageHeader i,
+.pageHeader a.active {
+    color: var(--secondary-color);
+}
+
+.pageHeader i {
+    font-size: 1.3rem;
+}
+
+.pageHeader .overlay {
+    padding: 10rem 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.24163168685442926) 0%,
+            rgba(0, 0, 0, 0.8298669809720763) 100%);
+}
+
+.pageHeader .overlay .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageHeader .overlay .wrapper .breadcrumbs {
+    background: var(--footer-bg);
+    padding: 1.5rem;
+    border-radius: var(--standard-border-radius);
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
