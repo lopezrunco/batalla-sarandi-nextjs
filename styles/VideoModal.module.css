@@ -1,0 +1,125 @@
+.video {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.video .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.video .flex .playIcon {
+    background-color: #ffffff2e;
+    border: 1px solid var(----border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    animation: pulseBg 4s infinite;
+}
+
+.video .flex .playIcon a {
+    display: inline-block;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    background: var(--secondary-color);
+    color: var(--dark-text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.video .flex .playIcon a:hover {
+    background: var(--secondary-color-lighten);
+}
+
+.video .flex .top-title {
+    margin-bottom: 0;
+}
+
+.video .flex h2 {
+    color: var(--light-text);
+    margin-bottom: 0;
+}
+
+.video .videoModal {
+    position: fixed;
+    background: #000000cc;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .videoModal iframe {
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.video .videoModal .closeIcon {
+    margin-left: auto;
+    margin-bottom: 1rem;
+    background: #0000007a;
+    border-radius: 1rem;
+    color: var(--light-text);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.video .videoModal.modal-active {
+    display: flex;
+}
+
+/* Pulse animation */
+@keyframes pulseBg {
+    0% {
+        background-color: #ffffff09;
+    }
+
+    50% {
+        background-color: #ffffff2e;
+    }
+
+    100% {
+        background-color: #ffffff09;
+    }
+}
+
+/* Media queries */
+
+@media (min-width: 760px) {
+    .video {
+        margin: 30rem 0 0;
+        padding: 10rem 0;
+    }
+}
+
+@media (min-width: 1170px) {
+    .video .videoModal .closeIcon {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .video .videoModal iframe {
+        max-width: 720px;
+        min-height: 400px;
+    }
+}

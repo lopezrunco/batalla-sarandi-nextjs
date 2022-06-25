@@ -4,6 +4,7 @@ import HomeSlider from '../components/HomeSlider'
 import News from '../components/News'
 import About from '../components/About'
 import TestimonialsSection from '../components/TestimonialsSection'
+import VideoModal from '../components/VideoModal'
 
 export default function Home({ news }) {
   return (
@@ -16,6 +17,12 @@ export default function Home({ news }) {
       <HomeSlider />
       <About />
       <TestimonialsSection />
+      <VideoModal
+        videoSrc='https://www.youtube.com/embed/VmA-iiTDnso'
+        bgImgName='video-section-bg1.jpg'
+        title='40 hectáreas de producción intensiva'
+        subtitle='Conozca nuestro establecimiento'
+      />
       <News news={news} />
     </div>
   )

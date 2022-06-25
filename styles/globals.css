@@ -142,6 +142,10 @@ select {
   vertical-align: middle;
 }
 
+::selection {
+  background-color: var(--selection-color);
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;

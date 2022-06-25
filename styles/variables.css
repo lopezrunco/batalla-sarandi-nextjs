@@ -7,6 +7,7 @@
     --primary-color-darken: #4b7543;
     --secondary-color: #eddd5e;
     --secondary-color-darken: #e8d330;
+    --secondary-color-lighten: #fded73;
     --color-text: #878986;
     --dark-text: #404a3d;
     --light-text: #fff;
@@ -14,6 +15,7 @@
     --medium-light-bg: #f5f0ea;
     --dark-bg: #404a3d;
     --footer-bg: #394336;
+    --selection-color: #eddd5e85;
     /* Effects */
     --overlay-primary-color: #2a4324d3;
     --box-shadow: 5px 5px 10px #0000002e;
