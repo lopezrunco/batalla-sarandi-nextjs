@@ -3,6 +3,7 @@ import AboutIntro from "../components/AboutIntro"
 import AboutImages from "../components/AboutImages"
 import VideoModal from "../components/VideoModal"
 import AboutHistory from "../components/AboutHistory"
+import AboutHits from "../components/AboutHits"
 
 const Nosotros = () => {
     return (
@@ -21,6 +22,7 @@ const Nosotros = () => {
                 subtitle='Conozca nuestro establecimiento'
             />
             <AboutHistory />
+            <AboutHits />
         </>
     )
 }
