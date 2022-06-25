@@ -1,5 +1,6 @@
 import PageHeader from "../components/PageHeader"
 import AboutIntro from "../components/AboutIntro"
+import AboutImages from "../components/AboutImages"
 
 const Nosotros = () => {
     return (
@@ -10,7 +11,7 @@ const Nosotros = () => {
                 page='Nosotros'
             />
             <AboutIntro />
-            <p>Nosotros page</p>
+            <AboutImages />
         </>
     )
 }
