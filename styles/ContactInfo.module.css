@@ -1,0 +1,29 @@
+.contactInfoCards .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.contactInfoCards .grid .card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--standard-border-radius);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactInfoCards .grid .card.active {
+    background-color: var(--medium-light-bg);
+}
+
+.contactInfoCards .grid .card p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 760px) {
+    .contactInfoCards .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,4 +1,5 @@
 import PageHeader from "../components/PageHeader"
+import ContactInfo from "../components/ContactInfo"
 
 const Contacto = () => {
     return <>
@@ -7,7 +8,7 @@ const Contacto = () => {
             title='Contacte con nosotros'
             page='Contacto'
         />
-        <p>Contacto page</p>
+        <ContactInfo />
     </>
 }
 
