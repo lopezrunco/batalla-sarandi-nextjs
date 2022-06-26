@@ -1,3 +1,4 @@
+import GalleryGrid from "../components/GalleryGrid"
 import PageHeader from "../components/PageHeader"
 
 const Galeria = () => {
@@ -7,7 +8,7 @@ const Galeria = () => {
             title='En imágenes'
             page='Galería'
         />
-        <p>Galeria page</p>
+        <GalleryGrid />
     </>
 }
 
