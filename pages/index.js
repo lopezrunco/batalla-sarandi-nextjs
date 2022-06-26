@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { data } from '../data'
 import HomeSlider from '../components/HomeSlider'
-import News from '../components/News'
+import LastNews from '../components/LastNews'
 import About from '../components/About'
 import TestimonialsSection from '../components/TestimonialsSection'
 import VideoModal from '../components/VideoModal'
@@ -25,7 +25,7 @@ export default function Home({ news }) {
         title='40 hectáreas de producción intensiva'
         subtitle='Conozca nuestro establecimiento'
       />
-      <News news={news} />
+      <LastNews news={news} />
       <FeaturedInfo />
       <CertificationsInfo />
     </div>
