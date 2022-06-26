@@ -1,0 +1,35 @@
+.pageNotFound {
+    background-image: url("../public/images/404-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.pageNotFound .overlay {
+    padding: 6rem 0;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.24163168685442926) 0%, rgba(0, 0, 0, 0.8298669809720763) 100%);
+}
+
+.pageNotFound .overlay .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pageNotFound .overlay .flex h2,
+.pageNotFound .overlay .flex h4,
+.pageNotFound .overlay .flex p {
+    color: var(--light-text);
+}
+
+.pageNotFound .overlay .flex h2 {
+    font-size: 15rem;
+}
+
+.pageNotFound .overlay .flex h4 {
+    font-size: 4rem;
+}

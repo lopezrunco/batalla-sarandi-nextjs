@@ -282,6 +282,7 @@ footer {
 .btn {
   display: inline-block;
   transition: var(--main-transition);
+  cursor: pointer;
 }
 
 .btn-md {
