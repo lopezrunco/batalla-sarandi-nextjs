@@ -47,7 +47,7 @@ const Bottom = () => {
                             href={`/novedades/${el.name}`}
                             className={styles.introText}
                           >
-                            <img src={el.images[0].url} alt={el.name} />
+                            <img src={`/images/${el.photo}`} alt={el.name} />
                           </a>
                         </div>
                         <div className={styles.info}>
