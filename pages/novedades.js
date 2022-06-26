@@ -1,4 +1,5 @@
 import PageHeader from "../components/PageHeader"
+import NewsGrid from "../components/NewsGrid"
 
 const Novedades = () => {
     return <>
@@ -7,7 +8,7 @@ const Novedades = () => {
             title='Novedades'
             page='Novedades'
         />
-        <p>Novedades page</p>
+        <NewsGrid />
     </>
 }
 
