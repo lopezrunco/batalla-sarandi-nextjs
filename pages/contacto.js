@@ -1,5 +1,6 @@
 import PageHeader from "../components/PageHeader"
 import ContactInfo from "../components/ContactInfo"
+import Map from "../components/Map"
 
 const Contacto = () => {
     return <>
@@ -9,6 +10,7 @@ const Contacto = () => {
             page='Contacto'
         />
         <ContactInfo />
+        <Map />
     </>
 }
 
