@@ -14,7 +14,7 @@ const PageHeader = ({ bgImage, title, page }) => {
             <div className={styles.breadcrumbs}>
               <Link href="/">Home</Link>
               <i className="fas fa-chevron-right"></i>
-              <a href="#" className={styles.active}>
+              <a className={styles.active}>
                 {page}
               </a>
             </div>

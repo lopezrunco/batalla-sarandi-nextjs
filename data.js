@@ -45,21 +45,6 @@ export const data = [
         videoSrc: 'm4Q1jseIUuw'
     },
     {
-        id: 4,
-        name: "experiencia-políticas-publicas-para-la-af",
-        title: "Experiencia de políticas públicas para la AF",
-        desc: 'Perteneciente al Grupo Mesa de Colonos de Sarandí Grande, el Establecimiento Batalla de Sarandí recibió distintos apoyos de la Dirección General de Desarrollo Rural del MGAP.',
-        longDesc: '',
-        photo: "experiencia-políticas-publicas-para-la-af.png",
-        secondaryInfo: {
-            title: 'Canal MGAP',
-            text: 'Cono López es productor familiar lechero de la zona de Sarandí Grande, departamento de Florida, y nos cuenta cómo las políticas públicas para el desarrollo rural mejoraron su calidad de vida.',
-            infoList: ['5 de abril de 2019']
-        },
-        videoThumb: 'thumb-experiencia-politicas-publicas-af.png',
-        videoSrc: 'AVVoYLuYwng'
-    },
-    {
         id: 5,
         name: "jornada-de-campo-en-predio-familiar",
         title: "Jornada de campo en predio familiar",
@@ -73,6 +58,21 @@ export const data = [
         },
         videoThumb: 'thumb-jornada-campo-predio-familiar.png',
         videoSrc: 'PJjoHGdxdOQ'
+    },
+    {
+        id: 4,
+        name: "experiencia-políticas-publicas-para-la-af",
+        title: "Experiencia de políticas públicas para la AF",
+        desc: 'Perteneciente al Grupo Mesa de Colonos de Sarandí Grande, el Establecimiento Batalla de Sarandí recibió distintos apoyos de la Dirección General de Desarrollo Rural del MGAP.',
+        longDesc: '',
+        photo: "experiencia-políticas-publicas-para-la-af.png",
+        secondaryInfo: {
+            title: 'Canal MGAP',
+            text: 'Cono López es productor familiar lechero de la zona de Sarandí Grande, departamento de Florida, y nos cuenta cómo las políticas públicas para el desarrollo rural mejoraron su calidad de vida.',
+            infoList: ['5 de abril de 2019']
+        },
+        videoThumb: 'thumb-experiencia-politicas-publicas-af.png',
+        videoSrc: 'AVVoYLuYwng'
     },
     {
         id: 6,

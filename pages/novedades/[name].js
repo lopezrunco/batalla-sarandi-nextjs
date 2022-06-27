@@ -5,7 +5,6 @@ import styles from '../../styles/New.module.css'
 
 const New = ({ newItem }) => {
     const [openVideoModal, setOpenVideoModal] = useState(false)
-    const [videoSrc, setVideoSrc] = useState('')
     const handleClick = () => {
         setOpenVideoModal(!openVideoModal)
     }
