@@ -10,7 +10,7 @@
 <h3 align="center">batalla-sarandi-nextjs</h3>
 
   <p align="center">
-    Website of a familiar milk farm business built in Next.js
+    JavaScript and Next.js powered website designed for a milk farm company. Easily customize colors, logos, text, and images to reflect your brand identity with ease.
     <br />
     <a href="https://batalla-de-sarandi.web.app/">View Demo</a>
     <br />
